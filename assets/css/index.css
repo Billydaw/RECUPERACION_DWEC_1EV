@@ -21,6 +21,12 @@ body {
     padding: 2em;
 }
 
+.text-container:hover {
+    font-weight:bold;
+    background-color: lime;
+    
+}
+
 .image-container {
     height: 300px;
     width: 100px;
@@ -62,4 +68,8 @@ body {
 .result-container p {
     font-size: 0.5rem;
     color: lightgray;
+}
+
+.text-container span {
+    font-size: 32px;
 }

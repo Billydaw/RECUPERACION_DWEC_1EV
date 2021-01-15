@@ -54,3 +54,20 @@ const removeSpan = () =>{
     }
     }
 boton2.setAttribute('onclick', 'removeSpan()');
+
+const nombre = document.getElementsByTagName('input').item(1);
+const edad = document.getElementsByTagName('input').item(2);
+let boton = document.getElementsByTagName('button').item(1);
+const json = document.getElementById('json-result');
+
+boton.setAttribute('onclick', 'cambioFormato()');
+
+const cambioFormato = () => {
+    const object = {
+        nombre: nombre.value,
+        edad: edad.value
+    };
+    if(edad.value < 18){
+    
+    }json.textContent = JSON.stringify(object);
+}
